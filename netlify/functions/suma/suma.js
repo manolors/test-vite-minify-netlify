@@ -7,7 +7,7 @@ const handler = async (event) => {
 ////////////////////////////////////////////
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: `Hello ${subject}`, data: "🥑", otracosa:{ lala : 2} }),
+      body: JSON.stringify({ message: `Hello`, data: "🥑", otracosa:{ lala : 2} }),
     }
   } catch (error) {
     return { statusCode: 500, body: error.toString() }
