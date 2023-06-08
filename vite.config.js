@@ -10,6 +10,7 @@ let build = {
 }
 
 if (process.env.SKIP_MINIFY) {
+  console.log("nos saltamos la minificación!" + process.env.SKIP_MINIFY);
   build.cssMinify = false;
   build.minify = false;
 }
