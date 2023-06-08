@@ -9,7 +9,8 @@ let build = {
   assetsDir: "./"
 }
 
-if (process.env.SKIP_MINIFY) {
+if (process.env.SKIP_MINIFY == true) {
+  console.log("Nos saltamos la minificación")
   build.cssMinify = false;
   build.minify = false;
 }
